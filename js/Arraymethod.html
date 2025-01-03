@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let students =["Sabo","Luffy","Zoro","sanji"];
+        console.log(students);
+        console.log(students[2]);
+
+        students[1]="Ace";
+        console.log(students);
+
+
+        for(let i=0;i<students.length;i++)
+    {
+        document.write(students[i]+" ");
+    }
+
+    for(let s of students)
+    {
+        document.write(s+" ");
+    }
+    for(let s in students)
+    {
+        document.write(s+" ");
+    }
+
+    //1.push():it is use to insert the value at end of the index of an array.
+    students.push("usoop","nami");
+    console.log(students);
+    //1.pop():it is use to remove the value at end of the index of an array.
+    students.pop("usoop","nami");
+    console.log(students);
+    //1.unshift():it is use to remove the value at starting of the index of an array.
+    students.unshift("chopper","franky");
+    console.log(students);
+    //1.shift():it is use to remove the value at starting of the index of an array.
+    students.shift("chopper","franky");
+    console.log(students);
+    //1.splice():remove three value from third index.
+    students.splice(3,2);
+    console.log(students);
+  
+    students.splice(2,1,"prasad","sai"); //remove one value and insert two value from second index
+    console.log(students);
+
+    //6.tostring(): it is used to convert the array into string
+    console.log(students.toString());
+
+    //6.join(): it is used to convert the array into string
+    console.log(students.toString());
+
+    </script>
+</body>
+</html>

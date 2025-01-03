@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Replace Method</h2>
+        <textarea name="" id="1" class="one" placeholder="Enter your text here"></textarea>
+        <div class="inputs">
+            <div>
+                <label for="ones" class="two">Old Text</label>
+                <input type="text" name="old" id="ones" placeholder="Enter text to replace" class="four">
+            </div>
+            <div>
+                <label for="twos" class="three">New Text</label>
+                <input type="text" name="new" id="twos" placeholder="Enter replacement text" class="five">
+            </div>
+        </div>
+        <button type="button" onclick="click1()" class="btn six">Replace</button>
+        <button type="button" onclick="click2()" class="btn seven">Replace-All</button>
+    </div>
+
+    <script>
+        function click1() {
+            let val = document.getElementById("ones").value;
+            let val1 = document.getElementById("twos").value;
+            let data = document.getElementById('1').value;
+
+            let data1 = data.replace(val, val1);
+            document.getElementById('1').value = data1;
+        }
+
+        function click2() {
+            let val = document.getElementById("ones").value;
+            let val1 = document.getElementById("twos").value;
+            let data = document.getElementById('1').value;
+
+            let data1 = data.replaceAll(val, val1);
+            document.getElementById('1').value = data1;
+        }
+    </script>
+</body>
+</html>

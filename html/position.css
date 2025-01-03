@@ -1,0 +1,54 @@
+.box-model
+{
+    border: 3px solid blueviolet;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    left: 30px;
+    position: relative;
+    top: 5px;
+
+}
+
+.box1-model{
+    background-color: yellow;
+    border-bottom: 5px solid blue;
+    padding: 10px;
+}
+
+  .parent
+  {
+    border:3px solid red;
+    width: 400px;
+    height: 100px;
+    background-color: aliceblue;
+    left: 30px;
+    position: relative;
+  }
+  .child
+  {
+    border:2px solid deeppink;
+    position: absolute;
+    left: 10px;
+    
+  }
+
+  .pos-fixed
+  {
+    height: 50px;;
+    width:50px;
+    position: fixed;
+    right: 0px;
+    width: 50px;
+    z-index: 1;
+  }
+
+  .pos-sticky
+  {
+    border: 2px solid brown ;
+    text-align: center;
+    background-color: aquamarine;
+    position: sticky;
+  
+
+  }

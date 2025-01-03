@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let emp=
+        {
+            id:101,
+            name:"tarun",
+            single:true,
+            details:function()
+            {
+                return `Id:${this.id} Name:${this.name} Single:{this.single} <br>`
+            },
+
+            address:
+            {
+                city:"chennai",
+                pin:10001,
+                state:"tamilnadu"
+            }
+        };
+
+             
+        document.write();
+
+        let std=[
+            {id:1,name:"Rahul",contact:33333,gender:"male"},
+            {id:2,name:"tharun",contact:43422,gender:"male"},
+            {id:3,name:"sandhiya",contact:45647,gender:"female"}
+        ]
+     
+        for(let s of std)
+
+        {
+
+            document.write(`<br> Id:${s.id} Name:${s.name} Contact:${s.contact} Gender:${s.gender}` )
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,169 @@
+28/11/2024
+
+
+Java Script 
+-----------
+
+*it is used to add functionality in webapp
+*it is interpreted language
+*it is loosely type language
+
+
+why js is loosely type language 
+  - when we create variable in js it can't determine what type of date it contain 
+    until unless intialize in it.
+
+  - in js variable we can store multiple type of value in it.
+
+
+How to use js
+   -there are two ways to use it :
+
+   1) internal js: in html we use script tag and in that we write js code.
+   2) External js: in this we create seperate js file and import the js file in 
+   html file by using script tag.
+
+
+   How to get output in js :
+
+   1.document.Write() : it will display output in html page.it will display output in same line 
+   2.Window.alert(): it will display output in model popup Window
+
+
+
+
+
+
+   ============================================================================================================
+
+   29/11/24
+
+
+  *Hoisting - it os used to store the dat in it.
+            - moving variable declaration and function top of the webpage.
+
+
+   variable : it is use to store data in it.
+   -we can create variable in js by using var,let,const
+  
+
+
+ 1.var :- it create a function scope varianble.
+   we can use variable before it declaration.
+   we can re declare variabvle.
+
+
+   var mydata: //variable declaration
+   mydata= "changepond"; // variable intialitation.
+   var yourname ="rahul"; //defining variable.
+
+
+ 2.let : it create block scope vcariable.
+
+     -we can't use variable before declaration.
+     -we can't redeclare variable.
+
+
+
+3.const: it create block scope variable.
+
+      -we can't use variable before its declaration.
+      -in this when we declare the variable at same time we have intialize it.
+      -its data will never change on time.
+
+
+-Exponention(**): it return power of any number.
+
+
+
+==(equal to):
+
+-it will check value only and if both are same it will return true value.
+Ex: 
+5==5;
+true
+
+5='5';
+true
+
+
+===(Exactly equal to):
+
+-it will check the value as well as data type 
+ex: 5===5 // true
+
+    5==='5' // false
+
+
+
+* DOM(Document Object Model) manupulation
+
+
+*Function : it is block code which is use to perform specific task.
+           - function will execute only when we call it.
+
+
+
+  * there are mainly three types of function 
+
+  1.predefine function: provide js to us 
+  2.usedefine function : user developed for particular use.
+
+
+  *Object :- it is used to store multiple value with different data type.
+            -in object data stored in key and value format.
+            -we can access the object data outside od by writting object.keyname.
+            -object type of data is denoted by {}
+
+  *Callback Function() : passing a function name as an argumment inside another function is called Callback Function.
+
+
+
+
+  *Date and time
+  -if we want to dispaly date and time in javascript first we have object of date class.
+
+
+
+  *String and its Method 
+
+  String: it collection of character.
+
+          -in String every Character has index its start from zero.
+          -in String blank Space also consider as a String.
+
+
+
+There are three method which index of Searching String
+  1.indexof(searchingString,StartIndex?):
+   -it will search string from left to right and return index of first occursance of String.
+   -it Searching string is not found then return -1 as result.
+
+
+  2.lastIndexof(searchingString,StartIndex?):
+   -it will search string from right to left and return index of first occursance of String.
+   -it Searching string is not found then return -1 as result.
+
+  3.Search(searchingString)
+   -it will search string from right to left and return index of first occursance of String.
+   -it Searching string is not found then return -1 as result.
+   - its faster than indexof() Method.
+
+
+   There are three method which return part of searching String 
+
+   1.slice(startindex,endIndex?) :
+   -it will return part of string from big string.
+   -if we write +ve index then will search index from left to right.
+   -if we write -ve index then will searchindex from rightto left.
+
+
+   2.substring(startindex,endIndex?):
+
+   -it will return part of string from big string.
+   -if we write +ve index then will search index from left to right.
+
+   3.substr(startindex'totalNumberOfCharacter);
+
+   -it will return part of string from big string.
+   -if we write +ve index then will search index from left to right.

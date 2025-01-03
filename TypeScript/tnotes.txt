@@ -1,0 +1,52 @@
+OOPs :
+
+- it is collection of data-member and member-function.
+- 
+
+
+
+
+
+
+=============================================================================================================
+
+3/12/24 
+
+*Inheritance :
+
+-accessing parent class property into child class.
+-to perform inheritence inbetween classes we use extends keyword.
+
+
+Super():
+
+-it reperesent parent class constructor inside child class constructor.
+-super method must be first statement in child class constructor.
+
+encapsulation :
+-Wrapping Data into single Unit.
+
+
+Pollymarphism : it is ability to take more than one form.
+ -method overloading : when we have multiple method with same name in same cls.
+ -method overriding: when we have multiple method with same name in different cls.
+
+ Abstraction:
+
+ -Hiding implementaion and showing necessary function.
+ -we can achive this by using interface,abstact class.
+
+ *module:
+
+ -writting ts code in single or multiple file and access it in another file.
+ -to achive this we use export and import keyword.
+ -to access it we use import.
+
+
+ *interface:
+
+ -it is signature of class.
+ -it contain abstract method.
+ -to create interface we use interface keyword.
+ -its child cls has responsibility to implemnt it.
+ -to implement we use implement keyword.

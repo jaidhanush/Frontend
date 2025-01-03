@@ -1,0 +1,85 @@
+<!-- form: it is used to get data from user.
+-to submit forms data ewe have two method
+
+
+get method:-form data will visible in browser url.
+            - with get method we can not send confidicial data.
+            - there is character limitation with get method to send data through url.
+
+
+post method : -form data will be not visible to user it will save in body object. 
+              - with post method we can save the confiditial data.
+              -there is no character limitation to save the data. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <form action="" method="get">
+        <div>
+            <label for="uname">Enter your full name</label>
+            <input type="text" name="fname" id="uname" pattern="^[a-zA-Z]{2,20}$"
+             placeholder="Enter name here" required>
+        </div>
+
+
+        <!-- password search : regular expression for password  -->
+        <div>
+            <label for="upass">Enter your password</label>
+            <input type="password" name="fpassword" id="upass"  placeholder="Enter name password" required>
+        </div>
+        <div>
+            <label for="uemail">Enter your Email</label>
+            <input type="email" name="fmail" id="uemil"  placeholder="Enter name email" required>
+        </div>
+        <div>
+            <label for="ucontact">Enter your contact</label>
+            <input type="tel" name="fcontact" id="ucontact" pattern="^[0-9]{9,11}$" placeholder="enter contact here" required>
+        </div>
+
+        <div>
+            <label for="udob">Select your DOB</label>
+            <input type="date" name="fdob" id="udob" required>
+        </div>
+        <div>
+            <label for="ugender">Select gender</label>
+            <input type="radio" name="gender" id="ugender" value="Male">Male
+            <input type="radio" name="gender" id="ugender" value="FeMale">FeMale
+            <input type="radio" name="gender" id="ugender" value="trans">Trans
+        </div>
+
+        <div>
+            <label for="uquali">Select your Qualification</label>
+            <input type="checkbox" name="edu" id="uquali" value="ssc">ssc
+            <input type="checkbox" name="edu" id="uquali" value="hsc">hsc
+            <input type="checkbox" name="edu" id="uquali" value="ug">UG
+            <input type="checkbox" name="edu" id="uquali" value="pg">PG
+        </div>
+        <div>
+            <label for="ucourse"> Select your courses</label>
+        <select multiple name="courses" id="ucourse" required>
+            <option value="">Select your Courses</option>
+            <option value="java">Java</option>
+            <option value="python">python</option>
+            <option value="react">react</option>
+            <option value="angular">angular</option>
+        </select>
+        </div>
+
+        <div>
+            <label for="ufee">fees</label>
+            <input type="text" name="fees" value="10000" readonly disabled>
+        </div>
+        <div>
+            <label for="uFeed">Write Feedback</label>
+            <textarea name="feedback" id="uFeed"></textarea>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+</body>
+</html>

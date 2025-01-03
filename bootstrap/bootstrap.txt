@@ -1,0 +1,20 @@
+28/11/24
+
+
+Bootstrap :
+ -it is html java and css framework.
+ -it make webapp attrractive,responsive and mobile friendly.
+ -it provvid in-built classes.
+ -latest version of Bootstrap is Bootstrap5
+
+
+
+
+
+ * there are two ways to use Bootstrap
+ 1.By using CDL link : for this you must interenet in your system.
+ 2.BY downloading : only for downloading we require internet connection.
+
+
+Official webdsite :
+--> getbootstrap.com

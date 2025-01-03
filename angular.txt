@@ -1,0 +1,145 @@
+11/12/24
+
+*angular :
+-it is java script framework.
+-it provide designing and devopment platform for creating single page application.
+-latest version of Angular is 18
+-Angular is developed and maintained by google.
+
+
+
+start comment :
+-------------
+
+ng serve 
+ng s
+
+
+
+-s/w pre-requisit
+
+-node js
+check: node -v
+
+-ts
+check: tsc -v
+
+-angular
+ng --version
+
+npm i -g @angular/cli ---->install cmd
+
+ng new projectName  ------>it will create angular project
+
+
+*how to create angular project 
+step1:ng new ProjectName
+step2:cd projectNmae
+step3:ng serve or ng s
+step4:go to browser url and write localhost:4200
+
+-angular Work on Component
+
+--component:it is partial part of angular project,
+            -it contain code for angular project,
+            - it can be any part of project,which we can reuse multiple time.
+
+-in angular root component name is App 
+
+* how to create component in angular
+ng generate component componentname
+ng g c componentname
+
+-When we create component in angular it generate four file 
+
+html,css,ts,spec.ts
+
+
+ng g c dtabinding (or) npx ng g c databinding
+ng g c directive (or) npx ng g c directive
+
+-how to get output of individual component 
+-go to component ts file and copy its selector name and write as tag where you want.
+
+*databinding: getting or accessing data from one file to another file in same compoent
+
+1.interpolation{{}}:in this data send from file 
+
+
+
+
+
+
+
+2.attribute directive: it is use to change appearance and behaviour of DOM
+-ngStyle: it is use to apply style property on the basis of condition.
+-ngClass: it is use to apply css class on the basis of condition.
+-ngModel: it is used to perform two-way binding
+
+3.CustomDirective: the directive created by developer.
+
+
+*Pipes:
+
+-it is use to transform property value without changing its original value.
+-it is debnoted by | sign.
+-There are Three types of Pipes in Angular
+
+
+
+
+
+
+
+
+
+
+=========================================================================
+
+12/12/24
+
+*how to navigate in angular
+-to perform component navigating we have to use routerLink property with anchor tag, but first we have to import RouterLink
+ in component ts file from "@angular/router" library.
+
+
+*Angular form :
+
+-there are two types of forms 
+1.UTDF(User Template Deriven Form):
+
+ -When We have create simple form validation in that case we use it.
+ -to perform validation we have to use ngModel directory with input element.
+ -in this ngForm directory will hold data of all input element in it.
+ -in utdf form validation code reside in html file.
+
+
+2.RTF(Reactive Template Form)
+
+-Whern we have to write complex logic to perform form validation in that case we use it.
+-to use rtf form validation first we have to import ReactiveFormModule from frormsModule in Component.
+
+
+Reactive Form MOdule Component import must...
+-in this we use two main classes 1.FormGroup 2.FormControl
+-FormGroup :it will hold info of all input element.
+-FormControl:it will hold info of valid input element.
+
+
+*service in angular 
+-in angular service is special clas with extra power.
+-it is use fro multiple component
+2.
+
+
+
+npx npm install -g angular -http-server
+go dist folder path
+
+angular-http-server
+
+
+
+ 
+
+

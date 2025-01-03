@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>"is this html <br>"</h2>
+    <script>
+        function greet()
+        {
+            return "Welcome you All"
+        }
+
+        document.write(greet(),"<br>");
+
+
+        function add(num1,num2)
+        {
+            return num1+num2;
+        }
+
+        document.write(add(10,10),"<br>");
+
+
+        // ananymous function : fuction without name
+        let mul = function(num1,num2)
+        {
+            return num1*num2+"<br>";
+        }
+
+        document.write(mul(20,5));
+
+
+        //4.arrow function : function with has no name as well as no function keyword 
+             
+        let div=(num1,num2)=>
+        {
+            return num1/num2+"<br>"
+        }
+
+
+        // let div=(num1,num2)=> return num1/num2+"<br>"; -- same code above we can written like this too.
+
+        document.write(div(20,5));
+        
+
+        // optional parameterize function : function in which parameter will be optional 
+ 
+        let fullname =(fn,ln,mn="")=>
+        {
+            return fn+mn+ln+"<br>";
+        }
+
+        document.write(fullname("jai","Dhanush"));
+        document.write(fullname("jai","Dhanush",".M"));
+
+        //6.rest parameterize function: when we dont know how many parameters required.
+        //in this we used spread operator(...);
+
+        let stdList=(...std)=>
+        {
+            return std;
+        }
+
+        document.write(stdList("jai","kar","vara"));
+ 
+    </script>
+</body>
+</html>

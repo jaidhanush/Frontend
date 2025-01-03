@@ -1,0 +1,248 @@
+3/12/24
+
+*React :
+
+-it is javascript library.
+-it is use to create rich user intrface.
+-it create single page application(SPA).
+
+*technology pr-requisit
+-html,css,js(basic js,ES5 and ES6,oops);
+
+*s/w pre-requisit
+-node.js
+node -v
+npm -v
+
+-editor(vs code)
+
+*how to create react project
+there are three ways to create react project
+1.By using npm: need to instal configuration file.
+
+    Step 1: npm install -g create-react-app.
+    step 2:create-react-app appname.
+    step 3:cd appname
+    step 4:npm start
+
+2.By using npx: no need to instal configuration file.
+
+
+    Step 1: npm create -react-app appname.
+    step 2:cd appname.
+    step 3:npm start
+
+3.By using vit: it create project with minimum package.
+
+
+*How to Start react Projct 
+npm start
+
+*How to display react Project 
+http://localhost:3000
+
+
+*react folder structure 
+-node_modules : all the dependencies and dev-dependencies will install in this folder.
+-package.json:All dependencies entry will found.
+-package-lock.json:detail description of file you will found here.
+-README.md:it is guid file hoe to use react project.
+
+public:it contain static data an dile in it.
+
+*react is component basis technology
+
+-component: it is partial part of react project.
+           -we can reuse throughout react project.
+
+
+
+- in each we have two type of component
+
+1.function component : when your main focus is on UI design.
+2.class component : when you have to implement complex logic in that case we have it.
+
+
+*How to display component output
+*JSX(Javascript+XML):
+
+-it allows us to write html code in react.
+-it makes react code eassy, in jsx we have wrap multiple element inside one parent element.
+-parent element must be any block element like div,h1-h6,p,etc..
+
+
+
+
+
+*How to use CSS in react
+-there are three way to use css
+
+
+4/12/2024
+----------
+
+*Fragment in react:
+-------------------
+
+-It is an alternative option jsx.
+-it remove unwanted element from Dom heirarchy.
+
+
+*Component Interaction:
+-access data from parent component to child component.
+-While performing component Interaction in between component they must have parent child relation.
+-how establish parent child relation in between component ,first we have to import child component
+ in parent component and then write child component name as tag in parent component.
+
+
+*Passing state data as props
+*Passing function data as props
+
+
+*PureComponent
+-it is use to prevent un-necessary re-rendering class component by performing shallow comparision
+-to achieve this we have extends class component with PureComponent class.
+
+
+*React.Memo():
+-it is use to prevent un-necessary function component by performing shallow comparision
+-to achieve we haveto pass function component name as argument to React.memo() method.
+
+
+*HOC(Higher Order Component):
+-----------------------------
+*when we have to share same business logic with multiple component in that case we use it.
+-in this we share business logic from function component to class or function component. 
+
+
+*ErrorBondry:
+-------------
+-it is react component which is use to handle error occure in component three whils rendering component.
+-to handle it we use two class component life-cycle method
+       1.getDerivedStateFromError():when error occure in component it execute automatically
+       2.componentDidCatch():it will display error log(error information).
+
+
+*Virtual DOM:
+-------------
+-instead of manipulating the virtual Dom randomly,the react creates virtual Dom in its memory,where it does 
+all the necessary changes in memory before making changes in browser dom.
+-react render the code needs to be change only. 
+
+
+======================================================================================================================
+5/12/2024
+----------
+
+*Routing In React:
+------------------
+
+-navigation of component.
+-By writing routing path name in browser url to display component output or view.
+-we use react-router-dom library in react to perform routing. 
+
+
+*how to instal react-router-dom
+----------------------------------
+-npm install react-router-dom@6
+
+1.createBrowserDom(): -it is a method which takes array of type of data.
+                     -in its object we use two property path,element.
+                     -in this method we define all types of routing.
+2.RouterProvider():it helps us to render output of all routing component on browser.
+
+
+
+*Types of Routing:
+------------------
+1.naming routing:display component output after writting compnent routing path name in browser url.
+2.default routing:display component output without routing path name.
+3.parameterize routing:dispaly component output after pasiing parameter with routing psth name.
+4.child routing:-display one routing inside another routing.
+		-to perform child routing we use children property in object which array of object value.
+		-to display 
+5.wild-card routing:-when user write wrong path name in browser url then we decide what component output
+                      should display.
+                     - Wild Card routing always write at last,it below routing will never work.
+
+
+
+
+
+
+
+
+
+
+
+==================================================================================================
+
+6/12/24
+
+
+*Validation for Dropdown
+
+*CRUD
+-REST fake API:
+Axios Library : it is use to make request from react app to server.
+-how to install Axios
+npm i axios
+
+
+
+*json-server : it is dummy server, Which server environment to database
+npm install json-server
+
+
+*json database
+
+*how to start and json-server and upload db.json
+
+cd/src/shared/database(press enter)
+
+npx json-server --Watch -p 1619 db.json                           1619= any four number we can give its port number
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+============================================================================================================================
+
+10/12/24
+
+-
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
