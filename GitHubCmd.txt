@@ -1,0 +1,50 @@
+1. Fetch All Branches
+Fetch all the branches from the remote repository to ensure they are available locally:
+
+bash
+Copy code
+[git fetch --all]
+2. Check Available Branches Locally
+List all local branches:
+
+bash
+Copy code
+[git branch]
+List all remote branches:
+
+bash
+Copy code
+[git branch -r]
+You should see:
+
+bash
+Copy code
+origin/main
+origin/master
+3. Switch to the master Branch
+If the master branch exists remotely but not locally, create a new local branch to track it:
+
+bash
+Copy code
+[git checkout -b master origin/master]
+This will create a local master branch and track the remote master branch.
+
+4. Verify Files
+After switching to the master branch, check if the files you expect are present:
+
+bash
+Copy code
+[ ls ]
+5. Optional: Set master as Default Branch Locally
+If you want master to be the default branch locally (instead of main), you can set it:
+
+bash
+Copy code
+[git symbolic-ref HEAD refs/heads/master]
+
+6. Pull the Latest Changes
+Ensure the master branch has the latest updates:
+
+bash
+Copy code
+[git pull origin master]
